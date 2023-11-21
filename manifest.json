@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "MGT 3745 HW9",
+  "description": "Customer Management System",
+  "version": "1.0",
+  "author": "hamzayaafar@gatech.edu",
+  "action": {
+    "default_title": "Customer Management System",
+    "default_popup": "popup/popup.html"  
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "js": [
+        "popup/script.js"
+      ],
+      "matches": [
+        "https://www.google.com/*"
+      ]
+    }
+  ]
+}
